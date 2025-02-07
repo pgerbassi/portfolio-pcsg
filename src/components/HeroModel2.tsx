@@ -112,7 +112,7 @@ const HeroModel: React.FC<ModelProps> = ({ className }) => {
   const iosSrc = "";
 
   return (
-    <div ref={containerRef} className={`${className} w-full h-[600vh]`}>
+    <div ref={containerRef} className={`${className} w-full h-[700vh]`}>
       <div className="sticky top-0 h-screen">
         <model-viewer 
           ref={modelRef}

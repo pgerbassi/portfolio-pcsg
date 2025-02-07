@@ -166,8 +166,8 @@ export const Projects = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 4000,
-                stopOnInteraction: false,
+                delay: 8000,
+                stopOnInteraction: true,
               }),
             ]}
             className="w-full"
@@ -181,8 +181,18 @@ export const Projects = () => {
             </CarouselContent>
             <div className="absolute inset-y-0 -left-4 -right-4 pointer-events-none">
               <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between pointer-events-auto">
-                <CarouselPrevious className="relative left-0 h-8 w-8 translate-x-0 border-primary text-primary" />
-                <CarouselNext className="relative right-0 h-8 w-8 translate-x-0 border-primary text-primary" />
+                <CarouselPrevious 
+                  className="relative left-0 h-8 w-8 translate-x-0 border-primary text-primary 
+                    hover:bg-primary/10 hover:border-primary hover:text-primary 
+                    focus:bg-primary/10 focus:border-primary focus:text-primary 
+                    active:bg-primary/10 active:border-primary active:text-primary" 
+                />
+                <CarouselNext 
+                  className="relative right-0 h-8 w-8 translate-x-0 border-primary text-primary 
+                    hover:bg-primary/10 hover:border-primary hover:text-primary 
+                    focus:bg-primary/10 focus:border-primary focus:text-primary 
+                    active:bg-primary/10 active:border-primary active:text-primary" 
+                />
               </div>
             </div>
           </Carousel>
