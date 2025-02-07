@@ -107,7 +107,7 @@ export const Hero = () => {
                 link.click();
               }}
             >
-              Baixar Currículo
+              Resume
             </Button>
           </div>
         </div>
