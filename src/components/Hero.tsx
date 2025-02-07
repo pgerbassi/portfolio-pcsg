@@ -97,6 +97,18 @@ export const Hero = () => {
             >
               Entrar em Contato
             </Button>
+            <Button
+              variant="outline"
+              className="animate-fade-in border-primary text-primary hover:bg-primary/10"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = "/resume.pdf";
+                link.download = "Pablo_Gerbassi_Resume.pdf";
+                link.click();
+              }}
+            >
+              Baixar Currículo
+            </Button>
           </div>
         </div>
       </div>
